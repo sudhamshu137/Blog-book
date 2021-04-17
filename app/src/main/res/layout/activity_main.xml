@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="254dp"
+        android:layout_height="238dp"
+        android:src="@drawable/influencer" />
+
+    <ImageView
+        android:layout_width="310dp"
+        android:layout_height="238dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/third" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alex_brush"
+            android:text="Share your thoughts here!!!"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            app:lazyloader_animDur="500"
+            app:lazyloader_dotsDist="15dp"
+            app:lazyloader_dotsRadius="13dp"
+            app:lazyloader_firstDelayDur="150"
+            app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+            app:lazyloader_secondDelayDur="300"
+            app:lazyloader_firstDotColor="#007fff"
+            app:lazyloader_secondDotColor="#17224d"
+            app:lazyloader_thirdDotColor="#f725b5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
